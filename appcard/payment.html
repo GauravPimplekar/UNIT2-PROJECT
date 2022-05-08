@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common2.css">
+</head>
+<body>
+    <form action="">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="number" id="number" placeholder="Enter your mobile">
+        <input type="password" id="password" placeholder="Enter your password">
+        <input type="password" id="cvv" placeholder="Enter your cvv">
+        <input type="submit" value="Get OTP">
+    </form>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",paymentfun)
+
+    function paymentfun(){
+        event.preventDefault()
+
+        var name = document.querySelector("#name").value 
+        var number = document.querySelector("#number").value 
+        var password = document.querySelector("#password").value
+        var cvv = document.querySelector("#cvv").value
+
+        window.location.href = "otp.html"
+    }
+</script>
+

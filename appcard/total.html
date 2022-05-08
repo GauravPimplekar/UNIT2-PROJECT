@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #goback{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="goback">Go Back</div>
+</body>
+</html>
+
+<script>
+    var jhola = localStorage.getItem("total")
+     console.log(typeof jhola)
+     var newtotal = +jhola
+     console.log(newtotal)
+
+     var getdata = localStorage.getItem("subtotal")
+
+
+    var footer = document.createElement("div")
+    footer.style.display = "flex"
+    footer.style.justifyContent = "space-between"
+    footer.style.width = "95%"
+    footer.style.margin = "auto"
+
+    var paymentmode = document.createElement("div")
+    
+    var line = document.createElement("p")
+    line.innerText = "Accepted Payment Methode"
+
+    var help = document.createElement("p")
+    help.innerText = "Need help? Call 1.888.966.6283 or"
+
+    paymentmode.append(line,help)
+   
+
+    var payment = document.createElement("div")
+    payment.style.border = "1px solid red"
+
+    var div3 = document.createElement("div")
+    div3.style.display = "flex"
+    div3.style.justifyContent = "space-between"
+    div3.style.width = "300px"
+    
+    var h3 = document.createElement("p")
+    h3.innerText = "Subtotal"
+
+    var total = document.createElement("p")
+    total.innerText = getdata
+    div3.append(h3,total)
+
+    var div4 = document.createElement("div")
+    div4.style.display = "flex"
+    div4.style.justifyContent = "space-between"
+
+    var Shipping = document.createElement("p")
+    Shipping.innerText = "Shipping"
+
+    var charge = document.createElement("p")
+    charge.innerText = "Free"
+    div4.append(Shipping,charge)
+
+    var div5 = document.createElement("div")
+    div5.style.display = "flex"
+    div5.style.justifyContent = "space-between"
+
+    var tax = document.createElement("p")
+    tax.innerText = "Estimated tax"
+
+    var totaltax = document.createElement("p")
+    totaltax.innerText = "100"
+    div5.append(tax,totaltax)
+
+    var newhr = document.createElement("hr")
+
+    var div6 = document.createElement("div")
+    div6.style.display = "flex"
+    div6.style.justifyContent = "space-between"
+
+    var alltotal = document.createElement("h2")
+    alltotal.innerText = "Estimated total"
+
+    var EstimatedTotal = document.createElement("h2")
+    EstimatedTotal.innerText = Number(getdata) + 100
+    div6.append(alltotal,EstimatedTotal)
+
+    var checkout = document.createElement("button")
+    checkout.innerText = "Check-out"
+    checkout.addEventListener("click",checkoutfun)
+    checkout.style.width = "100%"
+    checkout.style.height = "50px"
+    
+
+    payment.append(div3,div4,div5,newhr,div6,checkout)
+    footer.append(paymentmode,payment)
+    document.querySelector("body").append(footer)
+
+
+    document.querySelector("#goback").addEventListener("click",gobackfun)
+
+    function gobackfun(){
+        var total = localStorage.getItem("total")
+        var subtotal = localStorage.getItem("subtotal")
+        subtotal = total
+        localStorage.setItem("subtotal",total)
+        window.location.href = "appcard.html"
+    }
+
+
+    function checkoutfun(){
+        window.location.href = "payment.html"
+    }
+</script>
