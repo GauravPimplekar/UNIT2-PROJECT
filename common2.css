@@ -1,5 +1,5 @@
 form{
-    border: 1px solid red;
+    border: 1px solid teal;
     margin: auto;
     width: 300px;
     padding-bottom: 20px;
@@ -11,4 +11,12 @@ form > input{
     margin-top: 20px;
     height: 50px;
     width: 250px;
+}
+#Enter{
+    color: teal;
+    border: 0;
+}
+#Enter:hover{
+    background-color: teal;
+    color: white;
 }
