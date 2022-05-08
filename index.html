@@ -1,0 +1,993 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstrom Rack: Shop  Cloths, Shopes,Jewelry,Beauty and Home </title>
+    <link rel = "icon" href = 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYDnyF-tJ9iSC8ZDjxPg4Ca0Hm415fkxX_A&usqp=CAU" 
+            type = "image/x-icon">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            
+         
+   <style>
+  #navbar>div:nth-child(1){
+        background-color: darkcyan;
+        text-align: center;
+        font-size: 17px;
+        color: white;
+        padding: 5px;
+
+  }
+  #navbar>div:nth-child(1)>p>a{
+color: white;
+
+  }
+
+#head>div{
+    width: auto;
+    height: 90px;
+    border: 1px gray solid;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+#head>div>div>img{
+    height: 80px;
+}
+
+
+input{
+          width: 700px;
+          height: 45px;
+          border:0.5px gray solid;
+          border-left:none ;
+
+}
+#head>div>div:nth-child(2)>button{
+    width: 50px;
+    height: 45px;
+    border:0.5px gray solid;
+    border-right: none;
+    background-color: white;
+    
+  cursor: pointer;
+    
+}
+
+select{
+    background-color: white;
+    border: none;
+    width: 55px;
+    margin-right: 20px;
+}
+
+select>option{
+ background-color:white;
+ color: gray;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#head2{
+    display: flex;
+    /* border: 1px red solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    height: 30px;
+}
+
+#head2>div:nth-child(1){
+    color: red;
+}
+#head2>div:nth-child(11){
+    color:cornflowerblue;
+}
+
+
+#buttom{
+/* border: 1px green solid; */
+width: auto;
+height: 40px;
+}
+
+#buttom>div>h1{
+    text-align:center;
+}
+#buttom>div>button{
+    display: flex;
+    margin: auto;
+    height: 30px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    color: darkcyan;
+    border:0.5px darkcyan solid; 
+    background-color: white;   
+}
+
+#buttom>div>button:hover{
+    background-color:  darkcyan;
+    color: white;
+}
+
+
+#buttom>div:nth-child(2){
+
+background-color: hsl(54,35%,94%);
+width: auto;
+height: 100px;
+
+}
+
+
+
+
+#buttom>div:nth-child(2)>div>p{
+  
+      line-height: 5px;
+
+}
+
+#add{
+    display:flex ;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#add>div>img{
+    height: 100px;
+    width: 100px;
+}
+
+
+#flash>h1{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 15px;
+
+}
+
+
+.shortcut>a{
+    margin-right: 20px;
+}
+
+
+#Newflash{
+display: grid;
+grid-template-columns: repeat(5,auto);
+grid-template-rows:repeat(1,80px) ;
+justify-content: space-evenly;
+margin-top: 30px;
+
+}
+
+#Newflash>div:hover{
+
+    color: darkcyan;
+   text-decoration: underline;
+}
+
+
+#Bold{
+    display: grid;
+    
+grid-template-columns: repeat(6,auto);
+grid-template-rows:repeat(1,300px) ;
+justify-content: space-evenly;
+
+
+}
+#Bold>div{
+/* border: 1px green solid; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+#Bold>div>#info{
+    width: 200px;
+    height: 100%;
+}
+#Bold>div>img{
+    width: 200px;
+    height: 70%;
+}
+
+
+.spring{
+display: flex;
+width: 80%;
+margin: auto;
+
+
+}
+.spring>div>img{
+    height: 400px;
+    width: auto;
+    margin-right: 100px;
+    margin-top: 70px;
+}
+
+#trending{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+
+#trending>div{
+  width: 200px;
+  height:300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#trending>div>img{
+          width:200px;
+          height: 70%;
+}
+
+#make{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+  background-color: hsl(300,43%,68%);
+ display: flex;
+ color: white;
+ margin-top: 50px;
+
+
+}
+
+#make>div{
+ width: 50%;
+ height: 100px;
+ margin-left: 20px;
+justify-content: center;
+padding-top: 20px;
+
+}
+#make>div:nth-child(1)>h3{
+line-height: 5px;
+text-align: center;
+
+}
+#make>div:nth-child(2)>h4{
+line-height: 10px;
+text-align: center;
+
+}
+#make>div:nth-child(2)>a{
+    color: white;
+   margin-left: 60px;
+}
+
+
+#orange{
+width: 80%;
+height: 20px;
+margin: auto;
+background-color:hsl(9,78%,62%) ;
+
+}
+
+#denim{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.denim{
+    display: flex;
+    width: 50%;
+     margin: auto;
+    justify-content:space-evenly;
+}
+
+
+
+#denim>div{
+  width: 180px;
+  height:340px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#denim>div>img{
+          width:180px;
+          height: 70%;
+}
+
+#accessories>h1{
+text-align: center;
+
+}
+
+#contant{
+   width: 80%;
+   margin-left: 200px;
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+   grid-template-rows: repeat(1,400px);
+   justify-content: center;
+   
+  
+}
+#contant>div>img{
+  width: auto;
+ height: 75%;
+
+}
+
+#know{
+    width: 80%;
+    margin: auto;
+ display: grid;
+ grid-template-columns: repeat(4,300px);
+ grid-template-rows: repeat(1,300px);
+
+
+
+}
+
+#know>div>img{
+width: 300px;
+height: 60%;
+
+
+}
+
+/* .rack>p{
+    text-align: center;
+
+
+} */
+.rack{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    grid-template-rows: repeat(1,200px);
+    gap: 43px;
+}
+
+.rack>div>img{
+    width: 200px;
+    height: 200px;
+}
+.rac>p{
+    text-align: center;
+
+}
+
+#user>a>img{
+width: 60px;
+height: 50px;
+}
+   </style>
+  
+</head>
+<body>
+    <div id="navbar">
+     <div><p>Give Mom $150 in Gift Cards, earn a $25 Promo Card! Ends May 9 at 1pm ET. Restrictions apply. Online only.<a href="https://rack.giftcard.nordstrom.com/store/recipient?">Shop Gift Cards & See Restrictions</a></p></div>
+     <div id="head">
+         <div>
+             <div><img src="data:image/png;base64,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"/></div>
+            <div> <button><i class="fa fa-search"></i></i></button><input type="text" placeholder="Search.." /> </div>
+         
+            <div>
+                <div id="user"><a href="signin.html" ><img src="https://th.bing.com/th/id/OIP.IXo2-EG-CQaJeHN4-UFuZgHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.38&pid=1.7"/></a></div> 
+                <select>
+                    
+                      <option value="name" ><h2 >Hello,Sign in</h2></option>
+                      <option value="signup"> Sign Up </option>
+                      <option value="Createaccount">Create Account</option>
+                      <option>Your Account</option>
+                      <option value="Purchase">Purchase</option>
+                     <option value="Wishlist">Wishlist</option>
+                     <option value="shippingaddresses">Shipping Address</option>    
+                     <option value="Paymentmeathod">Payment Meathods</option> 
+                     <option value="Payandmanagecard">Pay & Manage Nordsstrom Card</option>      
+                    <option value="passwordandpersoninfo">Password and Personal info</option>
+                 <option value="Emailpreferences"> Email & Preferences</option>
+                    
+                    </select>
+                    <i class="fi fi-rr-lock"></i>
+                  
+                   
+             </div>
+
+            
+
+            </div>
+        </div>
+         
+     
+
+         <div id="head2">
+            <div>Clearance</div>
+            <div><a href="womenproduct.html">Women</a> </div>
+            <div> <a href="menproduct.html">Men</a></div>
+            <div>Kids</div>
+            <div>Shoes</div>
+            <div>Activewear</div>
+            <div>Bags & Accessories</div>
+            <div>Home</div>
+            <div>Beauty</div>
+            <div>Gifts</div>
+            <div>Flash Events</div>
+
+         </div>
+     
+ </div>
+<!-- buttom -->
+<div id="buttom">
+    <div>
+          <h1><b>More to Rack,easier and faster.</b></h1>
+          <button><a href="signin.html" >Sign In or Create an Account</a></button>
+    </div>
+
+    
+    <div id="add">
+        <div>
+            <p><b>Give Mom $150 in Cards,Earn a $25 Promo Card</b></p>
+            <p>Ends May 9 at 1pm ET. Restrictions apply. Online only.</p>
+            <p><a href="https://rack.giftcard.nordstrom.com/store/recipient?locale=en-us">Shop Gift Cards & See Restrictions</a></p>
+       </div>
+        <div><img src="https://th.bing.com/th/id/OIP.pYKSMifSYKG9iJq6cPJLSQHaHZ?w=186&h=185&c=7&r=0&o=5&dpr=1.38&pid=1.7"/></div>
+    </div>
+
+<!--2 part -->
+
+
+<div class="container">
+  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="https://n.nordstrommedia.com/id/90f377d5-877c-4a24-b2a7-0fcfa84fcc6c.jpeg?h=720&w=1608" alt="Los Angeles" style="width:100%;">
+          <div class="carousel-caption">
+        
+          </div>
+        <div>
+          <h2>VYB, We Wore What & More</h2>
+          <p>Warmer days call for swimwear that makes a splash.</p>
+           <div  class="shortcut">
+           <a href="https://www.nordstromrack.com/c/cut-out?campaign=swimcutout">Cut Outs Prints & More</a>
+           <a href="https://www.nordstromrack.com/shop/Women/Clothing/Swimwear">All Swimwear</a>
+
+
+           </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="https://n.nordstrommedia.com/id/841a102d-0c7b-4620-a254-12c0c426c10c.jpeg?h=720&w=1608" alt="Chicago" style="width:100%;">
+          <div class="carousel-caption">
+          </div>
+          
+          <h2>Looks for Every Type of Wedding.</h2>
+          <p>You've got invites. We've got outfits.</p>
+          <div  class="shortcut">
+             <a href="https://www.nordstromrack.com/c/wedding-destination/beach?campaign=weddingbeach">Beach</a>
+            <a href="https://www.nordstromrack.com/c/wedding-destination/black-tie?campaign=weddingblacktie">Black Tie</a>
+            <a href="https://www.nordstromrack.com/c/wedding-destination/garden?campaign=weddinggarden">Garden</a>
+            <a href="https://www.nordstromrack.com/c/wedding-destination/boho-rustic?campaign=weddingbohorustic">Rustic</a>
+           
+           
+       
+      
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="https://n.nordstrommedia.com/id/d585341b-2a08-4f31-9043-743723c8ae56.jpeg?h=720&w=1608" alt="New York" style="width:100%;">
+          <div class="carousel-caption">
+          </div>
+         <h2>Sam Edelman, Marc Fisher, Steven New York & More</h2>
+        <p>Just-right heights for every style.</p>
+        <div  class="shortcut">
+            <a href="https://www.nordstromrack.com/shop/Women/Shoes/Sandals/Flat?campaign=flatsandals">Flat Sandals</a>
+            <a href="https://www.nordstromrack.com/c/women/shoes/heels/heeled-sandals?campaign=heeledsandals">Heeled Sandals</a>
+            <a href="https://www.nordstromrack.com/shop/Women/Shoes/Sandals">All Sandals</a>
+        </div>
+      </div>
+      
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+   
+  </div>
+
+
+
+  <!-- 3rd part -->
+  <div id="flash">
+    <h1> <b>New Flash: Must-Have Sandals Up to 60% off </b></h1>
+    <h1>Online Only</h1>
+</div>
+<div id="Newflash">
+     <div>Bold & Bright</div>
+     <div>Strappy & More</div>
+     <div>Flat</div>
+     <div>Men</div>
+     <div>Men</div>
+
+
+</div>
+
+<!-- product -->
+<div id="Bold">
+<div >
+    <img id="info" src="https://n.nordstrommedia.com/id/2e2f0186-8263-497c-ae7d-f4406b42d787.jpeg?h=370&w=240"/>
+
+</div>
+<div> <img src="https://n.nordstrommedia.com/id/sr3/b5a06f61-be8f-4785-b648-f1173032321e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+            <div>
+                    <h5>Steve Madden</h5>
+                    <p>$44.97 (24% off)</p>
+                    <p><del>$59.95</del></p>
+            </div>
+
+
+</div>
+<div><img src="https://n.nordstrommedia.com/id/sr3/3927b4d4-e2dd-4d5d-b1c4-8febe26d5cb2.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+    <div>
+        <h5>WILD DIVA LOUNGE</h5>
+        <p>$14.97 (34% off)</p>
+        <p><del>$23.00</del></p>
+    </div>
+
+</div>
+<div><img src="https://n.nordstrommedia.com/id/sr3/ec37a806-bab5-447b-b672-77704f112e70.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+    <div>
+        <h5>Steve Madden</h5>
+        <p>$49.97 (37% off)</p>
+        <p><del>$79.99</del></p>
+    </div>
+
+</div>
+<div><img src="https://n.nordstrommedia.com/id/sr3/9d1951d9-00b9-4d95-a273-94e75a7cabb1.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+    <div>
+        <h5>DV by Dolce Vita</h5>
+        <p>$19.97 (50% off)</p>
+        <p><del>$40.00</del></p>
+    </div>
+
+</div>
+<div><img src="https://n.nordstrommedia.com/id/sr3/af742c16-35b9-454f-b101-f79d7e2fc71d.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+    <div>
+        <h5>Steve Madden</h5>
+        <p>$44.97 (35% off)</p>
+        <p><del>$69.99</del></p>
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- spring must have for all -->
+
+<div class="spring">
+
+<div>
+            <img src="https://n.nordstrommedia.com/id/316b6242-fb9d-4e9f-a418-e3ce62a67b22.jpeg?h=555&w=804"/>
+            <div>
+                     <h4>Lancôme</h4> 
+                    <p>  Beauty staples from the classic brand.</p>            
+                    <a href="https://www.nordstromrack.com/brands/lancome">Lancôme</a>
+                    <a href="https://www.nordstromrack.com/c/beauty/prestige">Prestige Beauty</a>   
+            </div>
+</div>
+
+
+
+
+<div>
+    <img src="https://n.nordstrommedia.com/id/fa4bc7a2-24fd-4338-a408-227419f47e61.jpeg?h=555&w=804"/>
+    <div>
+             <h4>PGA Tour,Callaway Golf & More</h4> 
+            <p>Upgrade your golf gear.</p>            
+            <a href="https://www.nordstromrack.com/c/men/clothing/workout-and-gym/golf?campaign=mgolf">Golf</a>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+<!-- trending now -->
+
+<div id="trending">
+    <div >
+           <img src="https://n.nordstrommedia.com/id/sr3/777583e7-508d-408f-bdbd-5313c023a91e.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+           <div>
+            <h5>ASTR the Label</h5>
+            <p>$44.97 (49% off)</p>
+            <p><del>$99.95</del></p>
+             </div>
+           
+    </div>
+
+
+
+    
+    <div> <img src="https://n.nordstrommedia.com/id/sr3/5c126114-fc6f-49df-8a5d-276f24beed4d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+                <div>
+                        <h5>Love By Design</h5>
+                        <p>$44.97 (47% off)</p>
+                        <p><del>$96</del></p>
+                </div>
+    
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/8c76d9ed-b2ba-49a2-96d4-87d821309413.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+        <div>
+            <h5>Lovestitch</h5>
+            <p>$29.97 (65% off)</p>
+            <p><del>$29.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/c2a245a8-f097-4c18-8afd-a650f4f67846.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"/>
+        <div>
+            <h5>Steven New York</h5>
+            <p>$39.97 (49% off)</p>
+            <p><del>$79.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/bb4785fc-d068-413b-b549-80ab8d68fd03.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+        <div>
+            <h5>Love By Design</h5>
+            <p>$44.97 (54% off)</p>
+            <p><del>$96.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/0c008582-1af1-4b73-93cd-1f091acefce2.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"/>
+        <div>
+            <h5>Doice Vita</h5>
+            <p>$59.97 (50% off)</p>
+            <p><del>$120.00</del></p>
+        </div>
+    
+    </div>
+</div>
+
+
+<!-- make -->
+
+<div id="make">
+       
+           
+                    <div>
+                    <h3>There's Still Time TO </h3>
+                    <h3>Make Mom's Day</h3>
+                    </div>
+           
+
+                    <div>
+                      <h4>Mother's Day is Sunday, May 8</h4>
+                       <h4> Pick the shipping method that works best for you.</h4>
+                        
+                        <a href="https://www.nordstromrack.com/promo/mothers-day-gifts">The Mother's Day Gift Shop</a>
+                        <a href="https://stores.nordstromrack.com/search">Find Your Store</a>
+                        <a href="https://www.nordstromrack.com/promo/gift-card-info">Gift Card</a>
+
+                    </div>
+
+                    
+
+
+</div>
+<div id="orange">
+
+</div>
+
+
+<!-- Denim -->
+<div class="denim">
+     <div><h1>Women</h1></div>
+     <div><h1>Men</h1></div>
+</div>
+
+
+<div id="denim">
+    <div >
+        <img src="https://n.nordstrommedia.com/id/4783de5a-3d26-49f9-b775-436f2a0a2cde.jpeg?h=429&w=279"/>
+        <div>
+         <h5>Denim for Women & Men</h5>
+         <p>From Joe's, Hudson Jeans, FRAME and more</p>
+         <p><a href="https://www.nordstromrack.com/c/best-selling-denim?filterByGenderAge=women">Shop Now</a></p>
+          </div>
+        
+ </div>
+
+
+
+ 
+ <div> <img src="https://n.nordstrommedia.com/id/sr3/f9ce0d5b-4fed-4f13-80e8-c3cdaedaf5c5.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+             <div>
+                     <h5>Democracy</h5>
+                     <p>$44.97 (42% off)</p>
+                     <p><del>$70</del></p>
+             </div>
+ 
+ 
+ </div>
+ <div><img src="https://n.nordstrommedia.com/id/sr3/aa011f95-49f8-445f-a55d-374d8acdafef.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+     <div>
+         <h5> KUT from the Kloth</h5>
+         <p>$29.97 (66% off)</p>
+         <p><del>$89.00</del></p>
+     </div>
+ 
+ </div>
+ <div><img src="https://n.nordstrommedia.com/id/sr3/af9bdb7c-ca7c-4180-a45c-76cae44350ce.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+     <div>
+         <h5>Democracy</h5>
+         <p>$39.97 (41% off)</p>
+         <p><del>$60.00</del></p>
+     </div>
+ 
+ </div>
+ <div><img src="https://n.nordstrommedia.com/id/sr3/8a40b7d3-faad-4086-87b6-4af38c22c591.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+     <div>
+         <h5>Madewell</h5>
+         <p>$69.97 (45% off)</p>
+         <p><del>$120.00</del></p>
+     </div>
+ 
+ </div>
+ <div><img src="https://n.nordstrommedia.com/id/sr3/c52956a5-6e5b-44d8-a35a-49fe4f1ce7ab.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"/>
+     <div>
+         <h5>Madewell</h5>
+         <p>$59.97 (50% off)</p>
+         <p><del>$120.00</del></p>
+     </div>
+ 
+ </div>
+
+
+
+</div>
+
+<div id="accessories">
+<h1>Spring Accessories,Right This Way</h1>
+</div>
+
+
+<div id="contant">
+<div>
+      <img src="https://n.nordstrommedia.com/id/51a1cabc-fd85-47e8-8284-d93bb49e06b3.jpeg?h=501&w=536"/>
+       <h5><b>New Balance,adidas & More</b></h5>
+       <p>New kicks under $50.</p>
+       <a href="https://www.nordstromrack.com/shop/women/shoes/sneakers?breadcrumb=Home%2FShoes%2FWomen%27s%20Shoes%2FSneakers&origin=topnav&filterByPrice=0-25&filterByPrice=25-50&campaign=wsneakersunder50">Women's Sneakers</a>
+       <a href="https://www.nordstromrack.com/shop/men/shoes/sneakers?breadcrumb=Home%2FShoes%2FMen%27s%20Shoes%2FSneakers&origin=topnav&filterByPrice=0-50&campaign=msneakersunder50">Men's Sneakers</a>
+</div> 
+<div>
+   <img src="https://n.nordstrommedia.com/id/d6d1b793-6be3-4723-b51f-50b584cfd9a5.jpeg?h=501&w=536"/>
+   <h5><b>Max Studio, Pleione, Melloday & More</b></h5>
+   <p>Spring tops from $19.97.</p>
+   <a href="https://www.nordstromrack.com/c/spring-tops-moment?campaign=springtopsmoment">Tops</a>
+   
+
+</div>
+<div>
+   <img src="https://n.nordstrommedia.com/id/e85d2408-8f1b-4ae0-86d9-675a0ad11f3e.jpeg?h=501&w=536"/>
+   <h5><b>Kurt Geiger London & More</b></h5>
+   <p>Handbags up to 50% off.</p>
+   <a href="https://www.nordstromrack.com/brands/kurt-geiger-london">Kurt Geiger London</a>
+   <a href="https://www.nordstromrack.com/shop/Women/Handbags">All Handbags</a>     
+
+
+</div>
+</div>
+
+
+<!--  best seller-->
+<div>
+    <h1>Best-selling items</h1>
+    </div>
+
+<div id="trending">
+    <div >
+           <img src="https://n.nordstrommedia.com/id/sr3/8ef02dbb-ea0d-4797-85c5-2308a8a4ce42.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+           <div>
+            <h5>BP.</h5>
+            <p>   (55% off)55% off.</p>
+           <p><del> $24.00</del></p>
+             </div>
+           
+    </div>
+
+    
+    <div> <img src="https://n.nordstrommedia.com/id/sr3/b329620a-cebb-4cce-8101-870fa9fba062.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+                <div>
+                        <h5>  Madewell</h5>
+                        <p>$12.72 ($16.97)</p>
+                        <p><del> $19.50</del></p>
+                </div>
+    
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/b8910db5-6273-44e0-b134-e2f145bbb5ee.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+        <div>
+            <h5>Hurley</h5>
+            <p>$11.98 (76% off)</p>
+            <p><del>$50.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/77559d7e-f15d-4560-b96a-7ca319190899.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+        <div>
+            <h5>SUPPLIES BY UNION BAY</h5>
+            <p>$29.97 (40% off)</p>
+            <p><del>$50.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/738b93eb-cf72-4316-8d11-d4b8cd07bca1.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+        <div>
+            <h5>Leith</h5>
+            <p>$34.97 (37% off)</p>
+            <p><del>$56.00</del></p>
+        </div>
+    
+    </div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/ff7e2cf1-2065-4449-8a68-d327a53be3b6.jpeg?q=45&dpr=2&h=365.31&w=230"/>
+        <div>
+            <h5>Doice Vita</h5>
+            <p>$59.97 (50% off)</p>
+            <p><del>$120.00</del></p>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+
+<!-- More to Know -->
+
+<div>
+    <h1>More to Know</h1>
+    </div>
+
+<div id="know">
+    <div >
+           <img src="https://n.nordstrommedia.com/id/b696c8a3-f2e2-4738-bfdd-dcffba6ee55a.jpeg?h=188&w=402"/>
+           <div>
+            <h5>An Exclusive Offer</h5>
+            <p>Just for new Nordstrom credit cardmembers. Restrictions apply. </p>
+           <p><a href="https://www.nordstromrack.com/creditcard/entry?cc=RA1023">Apply Now</a></p>
+             </div>
+           
+    </div>
+
+    <!-- 2 -->
+    <div >
+        <img src="https://n.nordstrommedia.com/id/f24929fa-9738-4674-960a-85382cd58752.jpeg?h=188&w=402"/>
+        <div>
+         <h5>Nordstrom Celebrates AAPI Month</h5>
+         <p>Join us as we honor Asian and Pacific Islander communities and cultures.</p>
+        <p><a href="https://www.nordstromrack.com/promo/diversity-at-nordstrom">Learn More</a></p>
+          </div>
+     </div>
+
+<!-- 3 -->
+<div >
+    <img src="https://n.nordstrommedia.com/id/2961092c-5387-4c52-9c94-1379fe2ac7ec.jpeg?h=188&w=402"/>
+    <div>
+     <h5>We Launched a Podcast!</h5>
+     <p>Join Pete Nordstrom and special guests for a behind-the-scenes look at Nordstrom. </p>
+    <p><a href="https://www.nordstromrack.com/promo/nordy-podcast#anchor-link-listen">Listen to All Episodes</a></p>
+      </div>
+ </div>
+
+ <!-- 4 -->
+ <div >
+    <img src="https://n.nordstrommedia.com/id/ac6da9b2-3363-4e6e-a325-0751c16ac4e1.jpeg?h=188&w=402"/>
+    <div>
+     <h5>Sponsor a Moment. Ignite Big Potential.</h5>
+     <p>Give the gift of mentorship.</p>
+    <p><a href="https://www.nordstromrack.com/bbbs">Donate Now & Learn More</a></p>
+      </div>
+ </div>
+
+
+
+
+    </div>
+
+
+<!-- Rack Your Look -->
+
+<div class="rac">
+    <h1>More to Know</h1>
+    <p>Click your favorite photos to shop our Instagram, and use #nordstromrack for a chance to be featured!</p>
+</div>
+
+
+<div class="rack">
+<div>
+    <img src="https://cdn.dashhudson.com/media/640/1630336568.132611839758.jpeg"/>
+</div>
+
+<div>
+    <img src="https://cdn.dashhudson.com/media/640/1628598956.37983440346.jpeg"/>
+</div>
+
+
+<div>
+    <img src="https://cdn.dashhudson.com/media/640/1625812071.39856985243.jpeg"/>
+</div>
+
+<div>
+    <img src="https://cdn.dashhudson.com/media/640/1626312391.206982943516.jpeg"/>
+</div>
+
+<div>
+    <img src="https://cdn.dashhudson.com/media/640/1619542695.85628681795.jpeg"/>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
+
