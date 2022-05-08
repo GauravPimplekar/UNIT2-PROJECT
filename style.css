@@ -1,0 +1,129 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97.5%;
+}
+.top{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+input{
+   margin-right: 20px;
+   height: 35px;
+   width: 270px;
+}
+p{
+    margin-right: 20px;
+}
+input + input{
+    background-color: #00819d;
+    border: 0px;
+}
+input + input::placeholder{
+color: white;
+text-align: center;
+}
+#container{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(1, 420px);
+  
+}
+#container >div{
+ /* border: 1px solid green; */
+ /* margin-top: -5px; */
+width: auto;
+background-color: rgb(249, 247, 247);
+}
+
+h3{
+    margin-left: 17px;
+ font-size: 1.2rem;
+ font-family: Brandon Text,Arial,sans-serif;
+ color: #393939;
+ font-weight: 700;
+}
+#container >div >p{
+    margin-left: 19px;
+    font-family: Brandon Text,Arial,sans-serif;
+   font-weight: 400;
+line-height: 1.4;
+color: #393939;
+}
+#container >div >p:hover{
+    cursor: pointer;
+    color:#00819d ;
+    text-decoration-line:underline ;
+}
+.last{
+    display: flex;
+    /* border: 5px solid black; */
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    gap: 20px;
+    font-family: Brandon Text,Arial,sans-serif;
+    color: #393939;
+    font-weight: 400;
+    background-color: rgb(249, 247, 247);
+}
+.last>p:hover{
+    cursor: pointer;
+    color:#00819d ;
+    text-decoration-line:underline ;
+}
+.social>button{
+  background-color: white;
+   margin-top: 30px;
+   border: 1.5px solid black;
+   border-radius: 50%;
+  margin-right: 20px;
+  
+}
+.phone>button{
+    display: flex;
+    /* border: 5px solid yellowgreen; */
+     border: 0px;
+    margin-top: 30px;
+    background-color: white;
+    background-color: rgb(249, 247, 247);
+}
+.phone>button>p{
+   margin-top: -2px;
+margin-left: 20px;
+font-family: Brandon Text,Arial,sans-serif;
+    color: #393939;
+    font-weight: 400;
+     font-size: 15px;
+    background-color: rgb(249, 247, 247);
+    
+}
+.social>button:hover{
+    cursor: pointer;
+    color:#00819d ;
+    text-decoration-line:underline ;
+    border-color: #00819d;
+}
+.phone>button>p:hover{
+    cursor: pointer;
+    color:#00819d ;
+    text-decoration-line:underline ;
+}
+img+div{
+    display: flex;
+    position: absolute;
+    margin-left: 50%;
+    top: 60px;
+    font-family: Brandon Text,Arial,sans-serif;
+    color: #393939;
+    font-weight: 400;
+     font-size: 15px;
+     text-decoration-line: underline;
+}
+img+div:hover{
+    cursor: pointer;
+    text-decoration-style: double;
+}
