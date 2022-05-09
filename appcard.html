@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <title>Nordstrom Rack: Shop  Cloths, Shopes,Jewelry,Beauty and Home </title>
+
     <link rel = "icon" href = 
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYDnyF-tJ9iSC8ZDjxPg4Ca0Hm415fkxX_A&usqp=CAU" 
             type = "image/x-icon">
@@ -17,9 +17,100 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             
          
-  <link rel="stylesheet" href="navbar.css">
+ <link rel="stylesheet" href="navbar1.css">
+
+
+    <style>
+        *{
+            position: relative;
+        }
+        h5{
+            background-color: gainsboro;
+            width: auto;
+            display: inline;
+        }
+        #container{
+            width: 95%;
+            margin: auto;
+            
+        }
+        #container > div{
+           
+            display: flex;
+            position: relative;
+            margin-bottom: 40px;
+            height: 300px;
+        }
+        
+        img{
+            
+            width: 120px;
+            height: 200px;
+            margin-top: 30px;
+        }
+        #data{
+            display: block;
+        }
+        #itemfun > div{
+            display: inline;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        #itemfun{
+            position: absolute;
+            right: 400px;
+            top: 30px;
+        }
+        #display{
+            position: absolute;
+            right: 0;
+        }
+        #header{
+            padding-left: 30px;
+        }
+        #remove{
+            border-radius: 50%;
+        }
+        #add{
+            border-radius: 50%;
+        }
+        #checkout{
+            position: absolute;
+            right: 30px;
+            border: 0;
+            color: teal;
+            margin-bottom: 50px;
+        }
+        #checkout:hover{
+            color: white;
+            background-color: teal;
+            border: 0;
+        }
+        #top{
+            display: flex;
+            font-weight: 400;
+            font-size: 22px;
+            width: 420px;
+            justify-content: space-between;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        #top > div{
+            justify-content: space-between;
+        }
+        #shop{
+            background-color: gray;
+            padding: 10px 15px;
+        }
+        #later{
+            background-color: white;
+            padding: 10px 15px;
+        }
+        
+    </style>
 </head>
 <body>
+
     <div id="navbar">
         <div><p>Give Mom $150 in Gift Cards, earn a $25 Promo Card! Ends May 9 at 1pm ET. Restrictions apply. Online only.<a href="https://rack.giftcard.nordstrom.com/store/recipient?">Shop Gift Cards & See Restrictions</a></p></div>
         <div id="head">
@@ -58,8 +149,8 @@
    
             <div id="head2">
                <div>Clearance</div>
-               <div><a href="women.html">Women</a> </div>
-               <div> <a href="men.html">Men</a></div>
+               <div><a href="womenproduct.html">Women</a> </div>
+               <div> <a href="menproduct.html">Men</a></div>
                <div>Kids</div>
                <div>Shoes</div>
                <div>Activewear</div>
@@ -72,5 +163,196 @@
             </div>
         
     </div>
+
+
+
+
+
+    <div id="top">
+        <div id="shop">Shopping Bag</div>
+        <div id="later">Save for Later (0)</div>
+    </div>
+
+
+
+
+    
+    <div id="header">
+    <h1>Shopping bag</h1>
+    <p>Items in your bag are not on hold.</p>
+    <p>Add a gift message when you check out.</p>
+    <h5>Free Shipping on Orders over $89 for a limited time or free ship to U.S. stores.</h5>
+    <a href="">Learn More</a>
+    <hr>
+    </div>
+
+
+    
+
+    
 </body>
 </html>
+
+<script >
+    // var seetotal = document.createElement("h1")
+    // seetotal.innerText = "SEE TOTAL"
+    // // seetotal.setAttribute("href","total.html")
+    // document.querySelector("body").append(seetotal)
+    
+
+    var data = JSON.parse(localStorage.getItem("projectdata"))
+
+    document.querySelector("#shop").innerText = "Shopping Bag"+ "(" + data.length + ")"
+
+    var box = document.createElement("div")
+    box.setAttribute("id","container")
+
+    var jhola = localStorage.getItem("total")
+     console.log(typeof jhola)
+     var newtotal = +jhola
+     console.log(newtotal)
+
+    displaydata(data)
+    var total = 0
+    var subtotal = 0
+    function displaydata(data){
+
+        data.forEach(function(el,index){
+            var div = document.createElement("div")
+
+            var img = document.createElement("img")
+            img.setAttribute("src",el.img)
+
+            var brand = document.createElement("p")
+            brand.innerText = el.brand
+
+            var name = document.createElement("p")
+            name.innerText = el.name
+
+            var br1 = document.createElement("br")
+
+            var size = document.createElement("p")
+            size.innerText = "SIZE : Small"
+
+            var color = document.createElement("p")
+            color.innerText = "COLOR : black"
+
+            var Item = document.createElement("p")
+            Item.innerText = "Item : "+el.productID
+
+            var br2 = document.createElement("br")
+
+            var del = document.createElement("p")
+            del.innerText = "Delivery"
+
+            var date = document.createElement("p")
+            date.innerText = "Fri, 5/13–Wed, 5/18"
+            date.style.color = "gray"
+
+
+            var div1 = document.createElement("div")
+            div1.setAttribute("id","data")
+            div1.append(brand,name,br1,size,color,Item,br2,del,date)
+
+            var div2 = document.createElement("div")
+
+            var price = document.createElement("h2")
+            price.setAttribute("id","display")
+            price.innerText = el.cPrice
+
+
+            // var add = document.createElement("div")
+            // add.setAttribute("id","add")
+            // add.innerText = "+"
+            // add.addEventListener("click",function(){
+            //     addone(el)
+            // })
+
+            // var display = document.createElement("div")
+            // display.innerText =el.cPrice
+
+            // var remove = document.createElement("div")
+            // remove.setAttribute("id","remove")
+            // remove.innerText = "-"
+            // remove.addEventListener("click",function(){
+            //     removeone(el)
+            // })
+
+            // function addone(el){
+            //     total = Number(display.innerText)
+            //     total = total + el.price
+            //     display.innerText = total
+            //     price.innerText = "$"+ total
+            //     newtotal = newtotal + el.price
+            //     console.log(newtotal)
+            //     localStorage.setItem("subtotal",(newtotal))
+            //     // localStorage.setItem("total",(newtotal))
+            //     total.innerText = newtotal
+            //     // console.log(total)
+            // }
+
+            // function removeone(el){
+            //     total = Number(display.innerText)
+            //     total = total - el.price
+            //     display.innerText = total
+            //     price.innerText = "$" +total
+            //     newtotal = newtotal - el.price
+            //     console.log(newtotal)
+            //     localStorage.setItem("subtotal",(newtotal))
+            //     // localStorage.setItem("total",(newtotal))
+            //     total.innerText = newtotal
+            // }
+
+
+            var hr = document.createElement("hr")
+
+            var removebutton = document.createElement("button")
+            removebutton.innerText = "Remove"
+            removebutton.style.color = "teal"
+            removebutton.style.border = "0"
+            removebutton.addEventListener("click",function(){
+                deleteitem(el,index)
+            })
+            div1.append(removebutton)
+            
+
+            // div2.append(remove,display,add)
+            // div2.setAttribute("id","itemfun")
+
+
+            div.append(img,div1,div2,price)
+            box.append(div,hr)
+            document.querySelector("body").append(box)
+        })
+
+        var checkout = document.createElement("button")
+        checkout.setAttribute("id","checkout")
+        checkout.innerText = "Check-out"
+        checkout.addEventListener("click",checkoutfun)
+        checkout.style.width = "30%"
+        checkout.style.height = "50px"
+       
+        
+        document.querySelector("body").append(checkout)
+
+        function checkoutfun(){
+            window.location.href = "payment.html"
+        }
+        
+    }
+
+    function deleteitem(el,index){
+
+        data.splice(index,1)
+        localStorage.setItem("projectdata",JSON.stringify(data))
+        window.location.reload()
+        
+        // newtotal = newtotal - el.price
+        // localStorage.setItem("total",(newtotal))
+        // localStorage.setItem("subtotal",(newtotal))
+    }
+
+
+    
+    
+</script>

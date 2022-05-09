@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="common2.css">
+    
 </head>
 <body>
     <form action="">
         <input type="number" id="otp" placeholder="Enter your otp">
-        <input type="submit">
+        <input type="submit" id="Enter">
     </form>
+
+    
 </body>
 </html>
 
@@ -21,10 +24,12 @@
     function optfun(){
         var otp = document.querySelector("#otp").value
         if(otp == "1234"){
-            alert("Payment successful")
+            alert("Payment successful") 
+            
         }
         else{
             alert("wrong OTP")
         }
+        window.location.href = "index.html"
     }
 </script>
