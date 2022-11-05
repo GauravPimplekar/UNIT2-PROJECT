@@ -1,4 +1,31 @@
-group member
+
+
+# Clone of Nordstrom.com
+Nordstrom.com website was our project for Unit-2 Construct week at Masai School.
+We have made this project in 5 days.<br />
+***Our clone Nordstrom Rack website - (https://adorable-douhua-ca27a0.netlify.app/)***
+
+
+# Tech Stack
+-HTML
+-CSS
+-JAVA SCRIPT
+-GIT HUB
+
+
+## Features
+
+Login/Singup
+Page Builtup
+Sort by Prices
+Add to Cart the product
+Counting No. of items in cart
+Providing Discounts on total amount
+checkout the order
+
+
+
+## Team
 
 1.Gaurav
 2.Kishan
@@ -7,6 +34,3 @@ group member
 5.Sanjay
 6.Rakesh
 
-Hello everyone,
-We have created a project online Shopping Website Nordstrom Rack which is a orignal name of the original website we have created Replicte of that website
-which is Our project for the unit 2.
