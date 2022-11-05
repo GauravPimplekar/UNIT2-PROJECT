@@ -15,10 +15,15 @@ We have made this project in 5 days.<br />
 ## Features
 
 Login/Singup
+
 Page Builtup
+
 Sort by Prices
+
 Add to Cart the product
+
 Counting No. of items in cart
+
 Providing Discounts on total amountcheckout the order
 
 
