@@ -19,8 +19,7 @@ Page Builtup
 Sort by Prices
 Add to Cart the product
 Counting No. of items in cart
-Providing Discounts on total amount
-checkout the order
+Providing Discounts on total amountcheckout the order
 
 
 
